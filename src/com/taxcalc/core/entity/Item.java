@@ -33,7 +33,7 @@ public class Item {
     }
 
     public boolean isExempted() {
-        return Stream.of("book", "chocolate", "pill")
+        return Stream.of("book", "chocolate", "food", "pill","capsule")
                 .anyMatch(exemptedItem -> name.contains(exemptedItem));
     }
 
